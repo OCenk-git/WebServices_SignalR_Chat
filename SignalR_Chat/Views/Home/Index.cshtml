@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h4>Benutzername: <span id="username"></span></h4>
+
+<div class="bg-light d-flex justify-content-start">
+    <div class="form-group">
+        <label for="message" class="form-label">Text der Nachricht: </label>
+        <input type="text" id="message" class="form-text" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" id="displayname" />
+        <input type="button" id="sendmessage" value="Senden" class="btn btn-primary" />
+        <br />
+    </div>
+</div>
+
+<div class="bg-light d-flex justify-content-start">
+    <div id="chatArea" class="form-group">
+        <textarea id="discussion" rows="8" cols="40"></textarea>
+    </div>
+    <div class="form-group"></div>
+    <div id="chatArea" class="form-group">
+        <select id="teilnehmer" class="form-select" size="9">
+            <option disabled="disabled">Benutzer auswählen</option>
+        </select>
+        <input type="button" value="Auswahl aufheben" id="deselect" class="btn btn-primary" />
+    </div>
+
+</div>
